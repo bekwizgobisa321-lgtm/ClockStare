@@ -1,12 +1,8 @@
-import './App.css';
+import FocusScreen from "./components/FocusScreen";
+import "./App.css";
 
 function App() {
-  // Will hold: current mode (focus/stare), settings state
-  return (
-    <div className="app">
-      {/* FocusScreen or StareScreen renders here */}
-    </div>
-  );
+  return <FocusScreen durationMinutes={25} />;
 }
 
 export default App;
