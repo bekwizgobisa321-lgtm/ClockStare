@@ -1,6 +1,17 @@
+import useThemeRotation from '../hooks/useThemeRotation';
+import './BackgroundRotator.css';
+
 function BackgroundRotator({ children }) {
-  // Will cycle through public/assets images every 2-3 minutes
-  return children;
+  const currentBackground = useThemeRotation();
+
+  return (
+    <div
+      className="background-rotator"
+      style={{ backgroundImage: `url(${currentBackground})` }}
+    >
+      {children}
+    </div>
+  );
 }
 
 export default BackgroundRotator;
