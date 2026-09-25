@@ -13,24 +13,27 @@
 }
 
 .start-btn {
-  width: 100%;
-  padding: 14px;
+  display: inline-block;
+  min-width: 140px;
+  padding: 14px 40px;
   border: none;
-  border-radius: 6px;
-  background: #6E7B6B;
-  color: #fff;
+  border-radius: 999px;
+  background: #fff;
+  color: #000;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
+  margin-top: 8px;
 }
 
 .start-btn:focus-visible {
-  outline: 2px solid #d9b670;
+  outline: 2px solid #2B2A28;
   outline-offset: 2px;
 }
 
 .divider {
   border: none;
-  border-top: 1px solid rgba(43, 42, 40, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
   margin: 32px 0 24px;
 }

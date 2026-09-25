@@ -11,21 +11,32 @@
 
 .setting label {
   display: block;
-  font-size: 13px;
+  font-size: 18px;
+  font-weight: 700;
   color: #fff;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
   margin-bottom: 6px;
 }
 
 .setting input {
-  width: 64px;
+  width: 72px;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   background: transparent;
-  font-size: 20px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
   color: #fff;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
   padding: 4px 0;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.setting input::-webkit-outer-spin-button,
+.setting input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .setting input:focus {

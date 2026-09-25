@@ -1,7 +1,9 @@
-.clock{
-  font-size: 64px;
+.clock {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 88px;
+  font-weight: 700;
   font-variant-numeric: tabular-nums;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   line-height: 1;
-  margin: 0;   
+  margin: 0;
 }
