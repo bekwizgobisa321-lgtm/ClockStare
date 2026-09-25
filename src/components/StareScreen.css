@@ -1,0 +1,32 @@
+.settings {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.setting {
+  text-align: left;
+}
+
+.setting label {
+  display: block;
+  font-size: 13px;
+  color: #6B6864;
+  margin-bottom: 6px;
+}
+
+.setting input {
+  width: 64px;
+  border: none;
+  border-bottom: 1px solid rgba(43, 42, 40, 0.15);
+  background: transparent;
+  font-size: 20px;
+  color: #2B2A28;
+  padding: 4px 0;
+}
+
+.setting input:focus {
+  outline: none;
+  border-bottom-color: #2B2A28;
+}

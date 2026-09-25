@@ -22,3 +22,9 @@
   outline: 2px solid #2B2A28;
   outline-offset: 2px;
 }
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(43, 42, 40, 0.15);
+  margin: 32px 0 24px;
+}

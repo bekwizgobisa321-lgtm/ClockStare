@@ -1,13 +1,20 @@
-import useTimer from "../hooks/useTimer";
-import Clock from "./Clock";
-import "./FocusScreen.css";
+import useTimer from '../hooks/useTimer';
+import Clock from './Clock';
+import SettingsPanel from './SettingsPanel';
+import './FocusScreen.css';
 
-function FocusScreen({ durationMinutes = 25, onComplete }) {
+function FocusScreen({
+  durationMinutes = 25,
+  stareMinutes,
+  onFocusMinutesChange,
+  onStareMinutesChange,
+  onComplete,
+}) {
   const { secondsLeft, isRunning, start, pause } = useTimer(
     durationMinutes * 60,
-    onComplete,
+    onComplete
   );
-  // Will render: BackgroundRotator, Clock, Start button, SettingsPanel
+
   function handleClick() {
     if (isRunning) {
       pause();
@@ -15,12 +22,22 @@ function FocusScreen({ durationMinutes = 25, onComplete }) {
       start();
     }
   }
+
   return (
     <main className="focus-screen">
       <Clock secondsLeft={secondsLeft} />
       <button className="start-btn" onClick={handleClick}>
-        {isRunning ? "Pause" : "Start"}
+        {isRunning ? 'Pause' : 'Start'}
       </button>
+
+      <hr className="divider" />
+
+      <SettingsPanel
+        focusMinutes={durationMinutes}
+        stareMinutes={stareMinutes}
+        onFocusChange={onFocusMinutesChange}
+        onStareChange={onStareMinutesChange}
+      />
     </main>
   );
 }
