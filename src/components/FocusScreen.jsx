@@ -1,6 +1,7 @@
 import useTimer from '../hooks/useTimer';
 import Clock from './Clock';
 import SettingsPanel from './SettingsPanel';
+import SessionHistory from './SessionHistory';
 import BackgroundRotator from './BackgroundRotator';
 import './FocusScreen.css';
 
@@ -10,6 +11,7 @@ function FocusScreen({
   onFocusMinutesChange,
   onStareMinutesChange,
   onComplete,
+  sessions,
 }) {
   const { secondsLeft, isRunning, start, pause } = useTimer(
     durationMinutes * 60,
@@ -40,6 +42,8 @@ function FocusScreen({
           onFocusChange={onFocusMinutesChange}
           onStareChange={onStareMinutesChange}
         />
+
+        <SessionHistory sessions={sessions} />
       </main>
     </BackgroundRotator>
   );

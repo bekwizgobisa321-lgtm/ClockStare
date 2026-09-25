@@ -4,8 +4,12 @@
   margin: 0 auto;
   padding: 48px 24px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.88);
-  border-radius: 16px;
+  transform: translateY(48px);
+}
+
+.focus-screen .clock {
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
 }
 
 .start-btn {
@@ -21,7 +25,7 @@
 }
 
 .start-btn:focus-visible {
-  outline: 2px solid #2B2A28;
+  outline: 2px solid #d9b670;
   outline-offset: 2px;
 }
 
