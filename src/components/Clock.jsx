@@ -1,4 +1,4 @@
-import './clock.css';
+import './Clock.css';
 
 function Clock({ secondsLeft }) {
 

@@ -11,7 +11,7 @@
 
 .setting label {
   display: block;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
   color: #fff;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
@@ -19,12 +19,12 @@
 }
 
 .setting input {
-  width: 72px;
+  width: 90px;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   background: transparent;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
   color: #fff;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);

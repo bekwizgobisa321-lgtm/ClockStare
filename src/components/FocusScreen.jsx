@@ -13,7 +13,7 @@ function FocusScreen({
   onComplete,
   sessions,
 }) {
-  const { secondsLeft, isRunning, start, pause } = useTimer(
+  const { secondsLeft, isRunning, start, pause, reset } = useTimer(
     durationMinutes * 60,
     onComplete
   );
@@ -26,13 +26,27 @@ function FocusScreen({
     }
   }
 
+  function handleReset() {
+    reset(durationMinutes * 60);
+  }
+
   return (
     <BackgroundRotator>
       <main className="focus-screen">
         <Clock secondsLeft={secondsLeft} />
-        <button className="start-btn" onClick={handleClick}>
-          {isRunning ? 'Pause' : 'Start'}
-        </button>
+
+        <div className="button-row">
+          <button className="start-btn" onClick={handleClick}>
+            {isRunning ? 'Pause' : 'Start'}
+          </button>
+          <button
+            className="reset-btn"
+            onClick={handleReset}
+            aria-label="Reset timer"
+          >
+            ↻
+          </button>
+        </div>
 
         <hr className="divider" />
 
