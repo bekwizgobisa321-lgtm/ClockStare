@@ -11,22 +11,22 @@
 
 .setting label {
   display: block;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 700;
-  color: #fff;
+  color: #F8FAFC;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
   margin-bottom: 6px;
 }
 
 .setting input {
-  width: 90px;
+  width: 110px;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   background: transparent;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 700;
-  color: #fff;
+  color: #F8FAFC;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
   padding: 4px 0;
   -moz-appearance: textfield;
@@ -41,5 +41,5 @@
 
 .setting input:focus {
   outline: none;
-  border-bottom-color: #fff;
+  border-bottom-color: #F8FAFC;
 }

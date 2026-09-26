@@ -1,0 +1,35 @@
+.mode-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.mode-pill {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mode-pill-active {
+  background: #F8FAFC;
+  color: #000;
+  border: 1px solid #F8FAFC;
+  cursor: default;
+}
+
+.mode-pill-outline {
+  background: transparent;
+  color: #F8FAFC;
+  border: 1px solid rgba(248, 250, 252, 0.6);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+}
+
+.mode-pill-outline:focus-visible {
+  outline: 2px solid #F8FAFC;
+  outline-offset: 2px;
+}

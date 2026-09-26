@@ -5,7 +5,7 @@
 
 .session-count {
   font-size: 17px;
-  color: #fff;
+  color: #F8FAFC;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
   margin: 0 0 8px;
 }
@@ -17,7 +17,7 @@
   max-height: 120px;
   overflow-y: auto;
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(248, 250, 252, 0.85);
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
 }
 

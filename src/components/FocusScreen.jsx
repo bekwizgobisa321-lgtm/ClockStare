@@ -3,6 +3,8 @@ import Clock from './Clock';
 import SettingsPanel from './SettingsPanel';
 import SessionHistory from './SessionHistory';
 import BackgroundRotator from './BackgroundRotator';
+import ModeSwitcher from './ModeSwitcher';
+import FullscreenButton from './FullscreenButton';
 import './FocusScreen.css';
 
 function FocusScreen({
@@ -11,6 +13,7 @@ function FocusScreen({
   onFocusMinutesChange,
   onStareMinutesChange,
   onComplete,
+  onStareNow,
   sessions,
 }) {
   const { secondsLeft, isRunning, start, pause, reset } = useTimer(
@@ -32,7 +35,11 @@ function FocusScreen({
 
   return (
     <BackgroundRotator>
+      <FullscreenButton />
+
       <main className="focus-screen">
+        <ModeSwitcher onStareNow={onStareNow} />
+
         <Clock secondsLeft={secondsLeft} />
 
         <div className="button-row">

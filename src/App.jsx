@@ -19,6 +19,10 @@ function App() {
     setMode('focus');
   }
 
+  function handleStareNow() {
+    setMode('stare');
+  }
+
   return (
     <div className="app">
       {mode === 'focus' && (
@@ -28,6 +32,7 @@ function App() {
           onFocusMinutesChange={setFocusMinutes}
           onStareMinutesChange={setStareMinutes}
           onComplete={handleFocusComplete}
+          onStareNow={handleStareNow}
           sessions={sessions}
         />
       )}
