@@ -5,6 +5,7 @@ import SessionHistory from './SessionHistory';
 import BackgroundRotator from './BackgroundRotator';
 import ModeSwitcher from './ModeSwitcher';
 import FullscreenButton from './FullscreenButton';
+import Brand from './Brand';
 import './FocusScreen.css';
 
 function FocusScreen({
@@ -35,6 +36,7 @@ function FocusScreen({
 
   return (
     <BackgroundRotator>
+      <Brand />
       <FullscreenButton />
 
       <main className="focus-screen">

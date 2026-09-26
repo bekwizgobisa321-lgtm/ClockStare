@@ -1,0 +1,26 @@
+.brand {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  text-align: left;
+}
+
+.brand-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #F8FAFC;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.brand-by {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(248, 250, 252, 0.7);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+  margin: 2px 0 0;
+}
