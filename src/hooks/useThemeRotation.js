@@ -4,7 +4,9 @@ import backgrounds from '../data/backgrounds';
 const ROTATE_INTERVAL_MS = 45000; // 45 seconds
 
 function useThemeRotation() {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(() =>
+    Math.floor(Math.random() * backgrounds.length)
+  );
 
   useEffect(() => {
     const intervalId = setInterval(() => {
