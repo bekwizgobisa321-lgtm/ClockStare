@@ -2,6 +2,7 @@ import { useState } from 'react';
 import FocusScreen from './components/FocusScreen';
 import StareScreen from './components/StareScreen';
 import useSessions from './hooks/useSessions';
+import { playRing } from './utils/sound';
 import './App.css';
 
 function App() {
@@ -12,10 +13,12 @@ function App() {
 
   function handleFocusComplete() {
     addSession();
+    playRing();
     setMode('stare');
   }
 
   function handleStareComplete() {
+    playRing();
     setMode('focus');
   }
 
