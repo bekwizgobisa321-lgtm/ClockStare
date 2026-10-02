@@ -1,4 +1,5 @@
 # ClockStare
+<img width="1920" height="868" alt="screencapture-clock-stare-vercel-app-2026-09-28-07_05_14" src="https://github.com/user-attachments/assets/db2a563f-39bb-444a-98c2-6f52e024b8a7" />
 
 A focus timer that replaces the usual "entertaining" break with a deliberate,
 low-stimulation reset — no music, no scrolling, no new content. Just a clock
@@ -6,6 +7,7 @@ and a blank wall.
 
 Most productivity apps compete for your attention, even during breaks.
 ClockStare gives it back.
+
 
 ## How it works
 
