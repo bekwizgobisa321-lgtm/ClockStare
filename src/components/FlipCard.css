@@ -1,0 +1,48 @@
+.flip-card {
+  position: relative;
+  background: #1a1a1a;
+  border-radius: 20px;
+  padding: 24px 48px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.flip-card-digits {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(140px, min(42vh, 22vw), 420px);
+  font-weight: 700;
+  color: #d4d4d4;
+  line-height: 1;
+  animation: flip-in 0.3s ease-out;
+}
+
+.flip-card-divider {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #000;
+  transform: translateY(-1px);
+}
+
+.flip-card-label {
+  position: absolute;
+  bottom: 16px;
+  left: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #888;
+}
+
+@media (max-width: 480px) {
+  .flip-card-digits {
+    font-size: clamp(72px, min(30vh, 26vw), 160px);
+  }
+  .flip-card {
+    padding: 16px 24px;
+  }
+}

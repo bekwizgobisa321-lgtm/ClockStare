@@ -15,6 +15,7 @@ function FocusScreen({
   onStareMinutesChange,
   onComplete,
   onStareNow,
+  onFlowNow,
   sessions,
 }) {
   const { secondsLeft, isRunning, start, pause, reset } = useTimer(
@@ -40,7 +41,7 @@ function FocusScreen({
       <FullscreenButton />
 
       <main className="focus-screen">
-        <ModeSwitcher onStareNow={onStareNow} />
+        <ModeSwitcher onFlowNow={onFlowNow} onStareNow={onStareNow} />
 
         <Clock secondsLeft={secondsLeft} />
 

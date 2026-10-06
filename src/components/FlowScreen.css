@@ -1,0 +1,66 @@
+.flow-screen-wrapper {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flow-screen {
+  width: 100%;
+  text-align: center;
+}
+
+.flip-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.flip-colon {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(60px, 14vw, 180px);
+  font-weight: 700;
+  color: #555;
+}
+
+.flow-back-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.flow-back-btn:hover {
+  opacity: 0.8;
+}
+
+.flow-back-btn:focus-visible {
+  outline: 2px solid #ccc;
+  outline-offset: 2px;
+}
+
+.flow-screen .start-btn {
+  display: inline-block;
+  min-width: 140px;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 999px;
+  background: #fff;
+  color: #000;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 56px;
+}

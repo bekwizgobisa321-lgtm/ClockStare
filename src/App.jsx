@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import FocusScreen from './components/FocusScreen';
 import StareScreen from './components/StareScreen';
+import FlowScreen from './components/FlowScreen';
 import useSessions from './hooks/useSessions';
 import { playRing } from './utils/sound';
 import './App.css';
@@ -26,6 +27,14 @@ function App() {
     setMode('stare');
   }
 
+  function handleFlowNow() {
+    setMode('flow');
+  }
+
+  function handleBackFromFlow() {
+    setMode('focus');
+  }
+
   return (
     <div className="app">
       {mode === 'focus' && (
@@ -36,11 +45,19 @@ function App() {
           onStareMinutesChange={setStareMinutes}
           onComplete={handleFocusComplete}
           onStareNow={handleStareNow}
+          onFlowNow={handleFlowNow}
           sessions={sessions}
         />
       )}
       {mode === 'stare' && (
         <StareScreen durationMinutes={stareMinutes} onComplete={handleStareComplete} />
+      )}
+      {mode === 'flow' && (
+        <FlowScreen
+          durationMinutes={focusMinutes}
+          onComplete={handleFocusComplete}
+          onBack={handleBackFromFlow}
+        />
       )}
     </div>
   );
