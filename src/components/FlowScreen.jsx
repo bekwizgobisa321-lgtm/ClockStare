@@ -10,8 +10,10 @@ function FlowScreen({ durationMinutes = 25, onComplete, onBack }) {
     onComplete
   );
 
-  const minutes = Math.floor(secondsLeft / 60);
+  const hours = Math.floor(secondsLeft / 3600);
+  const minutes = Math.floor((secondsLeft % 3600) / 60);
   const seconds = secondsLeft % 60;
+  const showHours = hours > 0;
 
   function handleClick() {
     if (isRunning) {
@@ -32,6 +34,12 @@ function FlowScreen({ durationMinutes = 25, onComplete, onBack }) {
 
       <main className="flow-screen">
         <div className="flip-group">
+          {showHours && (
+            <>
+              <FlipCard value={hours} label="HR" />
+              <span className="flip-colon">:</span>
+            </>
+          )}
           <FlipCard value={minutes} label="MIN" />
           <span className="flip-colon">:</span>
           <FlipCard value={seconds} label="SEC" />

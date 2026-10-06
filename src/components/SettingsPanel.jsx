@@ -11,6 +11,7 @@ function SettingsPanel({ focusMinutes, stareMinutes, onFocusChange, onStareChang
           min="1"
           value={focusMinutes}
           onChange={(e) => onFocusChange(Number(e.target.value))}
+          onFocus={(e) => e.target.select()}
         />
       </div>
       <div className="setting">
@@ -21,6 +22,7 @@ function SettingsPanel({ focusMinutes, stareMinutes, onFocusChange, onStareChang
           min="1"
           value={stareMinutes}
           onChange={(e) => onStareChange(Number(e.target.value))}
+          onFocus={(e) => e.target.select()}
         />
       </div>
     </div>
